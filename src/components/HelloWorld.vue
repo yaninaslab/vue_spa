@@ -12,6 +12,8 @@
       <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-babel" target="_blank" rel="noopener">babel</a></li>
       <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-eslint" target="_blank" rel="noopener">eslint</a></li>
     </ul>
+    <page-body></page-body>
+    <page-login></page-login>
     <h3>Essential Links</h3>
     <ul>
       <li><a href="https://vuejs.org" target="_blank" rel="noopener">Core Docs</a></li>
@@ -28,18 +30,25 @@
       <li><a href="https://vue-loader.vuejs.org" target="_blank" rel="noopener">vue-loader</a></li>
       <li><a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">awesome-vue</a></li>
     </ul>
+    <page-footer></page-footer>
   </div>
 </template>
 
 <script>
 import PageHeader from "./PageHeader.vue";
+import PageFooter from "./PageFooter.vue";
+import PageBody from "./PageBody.vue";
+import PageLogin from "./PageLogin.vue";
 export default {
   name: 'HelloWorld',
   props: {
     msg: String
   },
   components: {
-    PageHeader
+    PageHeader,
+    PageFooter,
+    PageBody,
+    PageLogin
   }
 }
 </script>
